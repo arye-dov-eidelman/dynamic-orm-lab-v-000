@@ -4,6 +4,7 @@ require 'active_support/inflector'
 class InteractiveRecord
 
   def table_name
+    binding.pry
     self.to_s.doncase.plurilize
   end
 
